@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html ng-app="myApp">
+<html lang="eng-US" ng-app="myApp">
 
 <head>
 	<title> Angular CRUD</title>
+	<meta charset="UTF-8">
 
 	<!-- jQuery -->
 	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
@@ -20,18 +21,24 @@
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+
 </head>
 
 <body>
 
 	<!-- Page Navigation -->
 	<div class="header">
-		<div class="container-fluid"> hello</div>
+		<div class="container-fluid">
+			Test Angular App
+		</div>
 	</div>
 
 	<!-- Page Body -->
 	
-	<div ngview></div>
+	<div class="body" ng-view></div>
 
 	<!-- Footer -->
 	<div class="footer">
