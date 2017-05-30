@@ -1,7 +1,20 @@
 .header {
 	background-color: black;
 	color: white;
-	font-family: 'Open Sans';
+	font-family: 'Open sans';
 	font-size: 25px;
 	text-align: center;
+}
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+th, td {
+	padding: 5px;
+}
+a {
+	text-decoration: none;
+}
+.btn {
+	color: #333;
 }

@@ -5,4 +5,4 @@ This is a basic CRUD application using AngularJS
 - bower install --save
 - browser-sync start --server
 
-It is still under construction and will update a full readme once it is up and running.
+Note: It is still under construction and will update a full readme once it is up and running.
