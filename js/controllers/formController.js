@@ -10,7 +10,7 @@
 			"clg":''
 		}
  		$scope.student=angular.copy(dumb);
- 		$scope.add-form.$setPristine();
+ 		$scope.addForm.$setPristine();
  	}
 
 	$scope.add=function(){

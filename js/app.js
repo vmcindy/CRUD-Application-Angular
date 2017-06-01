@@ -15,6 +15,7 @@
 				templateUrl: "views/createForm.html"
 			})
 			.when('/edit', {
+				controller: "UpdateController",
 				templateUrl: "views/updateForm.html"
 			})
 			.otherwise({

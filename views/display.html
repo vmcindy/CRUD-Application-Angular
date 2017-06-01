@@ -19,7 +19,7 @@
 				<td>{{ student.deg }}</td>
 				<td>{{ student.clg }}</td>
 				<td>
-					<a href="#!/edit"><button class="btn">Edit</button></a>
+					<a href="#!/edit"><button class="btn" ng-click="edit($index)">Edit</button></a>
 					<button class="btn btn-warning" ng-click="delete($index)">Delete</button>
 				</td>
 			</tr>
