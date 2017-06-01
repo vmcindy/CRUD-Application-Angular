@@ -14,6 +14,9 @@
 				controller: "FormController",
 				templateUrl: "views/createForm.html"
 			})
+			.when('/edit', {
+				templateUrl: "views/updateForm.html"
+			})
 			.otherwise({
 				redirectTo: '/'
 			})
