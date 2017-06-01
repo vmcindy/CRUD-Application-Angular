@@ -1,12 +1,30 @@
-<table>
-	<tr>
-		<th>S.No</th>
-		<th>Name</th>
-		<th>Age</th>
-		<th>Degree</th>
-		<th>College</th>
-	</tr>
+<div ng-controller="DisplayController">
+	<table>
 
-	<tr ng-repeat></tr>
+		<thead>
+			<tr>
+				<th>S.No</th>
+				<th>Name</th>
+				<th>Age</th>
+				<th>Degree</th>
+				<th>College</th>
+			</tr>
+		</thead>
 
-</table>
+		<tbody>
+			<tr ng-repeat="student in details">
+				<td>{{ $index +1 }}</td>
+				<td>{{ student.fname + $scope.lname }}</td>
+				<td>{{ student.age }}</td>
+				<td>{{ student.deg }}</td>
+				<td>{{ student.clg }}</td>
+				<td>
+					<button class="btn">Edit</button>
+					<button class="btn btn-warning">Delete</button>
+				</td>
+			</tr>
+		</tbody>
+
+	</table>
+	<a href="#!/create"><button class="btn">Add New</button></a>
+</div>

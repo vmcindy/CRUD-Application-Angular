@@ -7,6 +7,7 @@
 				templateUrl:"views/home.html"
 			})
 			.when('/display', {
+				controller:"DisplayController",
 				templateUrl:"views/display.html"
 			})
 			.when('/create', {
