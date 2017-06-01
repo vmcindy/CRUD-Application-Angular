@@ -1,8 +1,8 @@
 
- app.controller('FormController', ['$scope', 'Add', function($scope,Add) {
+ app.controller('FormController', ['$scope', 'Operations', function($scope,Operations) {
 
 	$scope.add=function(){
-		Add.add($scope.student);
+		Operations.add($scope.student);
 		alert('Successfully added a new record');
 	}
 }]);

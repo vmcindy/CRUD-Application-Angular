@@ -1,5 +1,9 @@
-app.controller('DisplayController', ['$scope', 'Add', function($scope,Add) {
+app.controller('DisplayController', ['$scope', 'Operations', function($scope,Operations) {
 	
-	$scope.details= Add.details;
+	$scope.details= Operations.details;
 	
+	$scope.delete=function(x){
+		Operations.delete(x);
+		alert('Deleted a record');
+	}
 }]);
