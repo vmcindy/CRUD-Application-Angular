@@ -9,6 +9,14 @@ app.controller('UpdateController',['$scope', 'Operations', function($scope,Opera
 		$scope.clg = $scope.det[0].clg;
 	}
 
+	var reset = function(){
+		$scope.fname = null;
+		$scope.lname = null;
+		$scope.age = null;
+		$scope.deg = null;
+		$scope.clg = null;	
+	}
+
 	init();
 
 	$scope.update = function(){
@@ -22,6 +30,7 @@ app.controller('UpdateController',['$scope', 'Operations', function($scope,Opera
 		}
 		Operations.add(student);
 		alert('Successfully edited a record');
+		reset();
 	}
 
 }]);

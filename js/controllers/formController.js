@@ -2,15 +2,7 @@
  app.controller('FormController', ['$scope', 'Operations', function($scope,Operations) {
 
  	var reset = function(){
- 		var dumb = {
-			"fname":'',
-			"lname":'',
-			"age":'',
-			"deg":'',
-			"clg":''
-		}
  		$scope.student=null;
- 		//$scope.addForm.$setPristine();
  	}
 
 	$scope.add=function(){

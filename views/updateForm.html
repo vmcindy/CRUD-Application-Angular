@@ -1,12 +1,12 @@
 <div class="updateForm" ng-controller="UpdateController" >
 	<center>
-		<form name="editForm">
+		<form name="editForm" ng-submit="update()">
 			<input type="text" name="fname" placeholder="First Name" required ng-model="fname"><br/>
 			<input type="text" name="lname" placeholder="Last Name" required ng-model="lname"><br/>
 			<input type="text" name="age" placeholder="Age" required ng-model="age"><br/>
 			<input type="text" name="deg" placeholder="Degree (B.Tech, M.Tech,etc)" required ng-model="deg"><br/>
 			<input type="text" name="colg" placeholder="College/University" required ng-model="clg"><br/>
-			<button class="btn" ng-click="update()">Update</button>
+			<input type="submit" value="Update" class="btn btn-primary">
 		</form>
 	</center>
 </div>
