@@ -9,8 +9,8 @@
 			"deg":'',
 			"clg":''
 		}
- 		$scope.student=angular.copy(dumb);
- 		$scope.addForm.$setPristine();
+ 		$scope.student=null;
+ 		//$scope.addForm.$setPristine();
  	}
 
 	$scope.add=function(){
