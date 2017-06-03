@@ -1,11 +1,11 @@
 <div class="createForm" ng-controller="FormController" >
 	<center>
 		<form name="addForm" ng-submit="add()">
-			<input type="text" name="fname" placeholder="First Name" required ng-model="student.fname"><br/>
-			<input type="text" name="lname" placeholder="Last Name" required ng-model="student.lname"><br/>
-			<input type="text" name="age" placeholder="Age" required ng-model="student.age"><br/>
-			<input type="text" name="deg" placeholder="Degree (B.Tech, M.Tech,etc)" required ng-model="student.deg"><br/>
-			<input type="text" name="colg" placeholder="College/University" required ng-model="student.clg"><br/>
+			<input type="text" id="fname" title="Numbers and other special characters are not allowed" placeholder="First Name" pattern="^[A-Za-z ]+$" required ng-model="student.fname"><br/>
+			<input type="text" id="lname" title="Numbers and other special characters are not allowed" placeholder="Last Name" pattern="^[A-Za-z ]+$" required ng-model="student.lname"><br/>
+			<input type="text" id="age" title="Enter age in numbers" placeholder="Age" pattern="^[0-9]+$" required ng-model="student.age"><br/>
+			<input type="text" id="deg" title="Numbers and other special characters are not allowed" placeholder="Degree (B.Tech, M.Tech,etc)" pattern="^[A-Za-z ]+$" required ng-model="student.deg"><br/>
+			<input type="text" id="colg" title="Numbers and other special characters are not allowed" placeholder="College/University" pattern="^[A-Za-z ]+$" required ng-model="student.clg"><br/>
 			<input type="submit" value="Create" class="btn btn-primary">
 		</form>
 	</center>

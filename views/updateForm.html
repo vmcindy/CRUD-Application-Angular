@@ -1,11 +1,11 @@
 <div class="updateForm" ng-controller="UpdateController" >
 	<center>
 		<form name="editForm" ng-submit="update()">
-			<input type="text" name="fname" placeholder="First Name" required ng-model="fname"><br/>
-			<input type="text" name="lname" placeholder="Last Name" required ng-model="lname"><br/>
-			<input type="text" name="age" placeholder="Age" required ng-model="age"><br/>
-			<input type="text" name="deg" placeholder="Degree (B.Tech, M.Tech,etc)" required ng-model="deg"><br/>
-			<input type="text" name="colg" placeholder="College/University" required ng-model="clg"><br/>
+			<input type="text" id="fname" title="Numbers and other special characters are not allowed" placeholder="First Name" pattern="^[A-Za-z]+$" required ng-model="fname"><br/>
+			<input type="text" id="lname" title="Numbers and other special characters are not allowed" placeholder="Last Name" pattern="^[A-Za-z]+$" required ng-model="lname"><br/>
+			<input type="text" id="age" title="Enter age in numbers" placeholder="Age" pattern="^[0-9]+$" required ng-model="age"><br/>
+			<input type="text" id="deg" title="Numbers and other special characters are not allowed" placeholder="Degree (B.Tech, M.Tech,etc)" pattern="^[A-Za-z]+$" required ng-model="deg"><br/>
+			<input type="text" id="colg" title="Numbers and other special characters are not allowed" placeholder="College/University" pattern="^[A-Za-z]+$" required ng-model="clg"><br/>
 			<input type="submit" value="Update" class="btn btn-primary">
 		</form>
 	</center>

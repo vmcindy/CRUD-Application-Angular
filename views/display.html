@@ -9,13 +9,14 @@
 					<th>Age</th>
 					<th>Degree</th>
 					<th>College</th>
+					<th>Actions</th>
 				</tr>
 			</thead>
 
 			<tbody>
 				<tr ng-repeat="student in details">
 					<td>{{ $index +1 }}</td>
-					<td>{{ student.fname + $scope.lname }}</td>
+					<td>{{ student.fname + ", " + student.lname }}</td>
 					<td>{{ student.age }}</td>
 					<td>{{ student.deg }}</td>
 					<td>{{ student.clg }}</td>
