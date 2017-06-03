@@ -1,4 +1,4 @@
-app.controller('UpdateController',['$scope', 'Operations', function($scope,Operations){
+app.controller('UpdateController',['$scope', 'Operations', '$window', function($scope,Operations,$window){
 
 	$scope.det = Operations.eRecord;
 	var init = function(){
@@ -31,6 +31,7 @@ app.controller('UpdateController',['$scope', 'Operations', function($scope,Opera
 		Operations.add(student);
 		alert('Successfully edited a record');
 		reset();
+		$window.location.href='#!/display';
 	}
 
 }]);
