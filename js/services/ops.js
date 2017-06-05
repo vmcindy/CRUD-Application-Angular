@@ -1,22 +1,31 @@
 app.factory('Operations',function(){
 
-	this.details=[];
+	this.details = function() {
+		return myData;
+	}
+
+	var updateIndex;
 	this.eRecord={};
 
 	this.add = function(x){
-		this.details.push(angular.copy(x));
-		console.log(this.details);
+		myData.push(angular.copy(x));
+		console.log(myData);
 	};
 
 	this.delete = function(i){
-		this.details.splice(i,1);
-		console.log(this.details);
+		if(confirm('Do you want to delete the record?'))
+			myData.splice(i,1);
+		console.log(myData);
 	};
 
 	this.edit = function(i){
-		this.eRecord= this.details.splice(i,1);
+		updateIndex = i;
+		this.eRecord= myData[i];
 		console.log(this.eRecord);
 	};
 
+	this.update = function(x) {
+		myData[updateIndex] = x;
+	}
 	return this;
 });

@@ -2,11 +2,11 @@ app.controller('UpdateController',['$scope', 'Operations', '$window', function($
 
 	$scope.det = Operations.eRecord;
 	var init = function(){
-		$scope.fname = $scope.det[0].fname;
-		$scope.lname = $scope.det[0].lname;
-		$scope.age = $scope.det[0].age;
-		$scope.deg = $scope.det[0].deg;
-		$scope.clg = $scope.det[0].clg;
+		$scope.fname = $scope.det.fname;
+		$scope.lname = $scope.det.lname;
+		$scope.age = $scope.det.age;
+		$scope.deg = $scope.det.deg;
+		$scope.clg = $scope.det.clg;
 	}
 
 	var reset = function(){
@@ -28,7 +28,7 @@ app.controller('UpdateController',['$scope', 'Operations', '$window', function($
 			"deg": $scope.deg,
 			"clg": $scope.clg
 		}
-		Operations.add(student);
+		Operations.update(student);
 		alert('Successfully edited a record');
 		reset();
 		$window.location.href='#!/display';

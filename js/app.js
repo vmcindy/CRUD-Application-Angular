@@ -1,6 +1,8 @@
 
 	var app = angular.module('myApp', ['ngRoute']);
-
+	
+	var myData = [];
+	
 	app.config(function($routeProvider) {
 		$routeProvider
 			.when('/', {
