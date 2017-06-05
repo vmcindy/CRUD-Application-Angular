@@ -1,4 +1,4 @@
-app.factory('Operations',function(){
+app.factory('Operations', ['$window', function($window){
 
 	this.details = function() {
 		return myData;
@@ -14,7 +14,10 @@ app.factory('Operations',function(){
 
 	this.delete = function(i){
 		if(confirm('Do you want to delete the record?'))
+		{
 			myData.splice(i,1);
+			alert('Deleted a record.');
+		}
 		console.log(myData);
 	};
 
@@ -25,7 +28,12 @@ app.factory('Operations',function(){
 	};
 
 	this.update = function(x) {
-		myData[updateIndex] = x;
+		if(confirm('Are you sure, you want to change the record?'))
+		{
+			myData[updateIndex] = x;
+			alert('Successfully edited a record');
+			$window.location.href='#!/display';
+		}
 	}
 	return this;
-});
+}]);

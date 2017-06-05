@@ -9,13 +9,13 @@ app.controller('UpdateController',['$scope', 'Operations', '$window', function($
 		$scope.clg = $scope.det.clg;
 	}
 
-	var reset = function(){
+	/*var reset = function(){
 		$scope.fname = null;
 		$scope.lname = null;
 		$scope.age = null;
 		$scope.deg = null;
 		$scope.clg = null;	
-	}
+	}*/
 
 	init();
 
@@ -29,9 +29,7 @@ app.controller('UpdateController',['$scope', 'Operations', '$window', function($
 			"clg": $scope.clg
 		}
 		Operations.update(student);
-		alert('Successfully edited a record');
-		reset();
-		$window.location.href='#!/display';
+		//reset();
 	}
 
 }]);

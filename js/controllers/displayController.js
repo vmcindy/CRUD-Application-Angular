@@ -4,7 +4,6 @@ app.controller('DisplayController', ['$scope', 'Operations', function($scope,Ope
 	
 	$scope.delete=function(x){
 		Operations.delete(x);
-		alert('Deleted a record');
 	}
 
 	$scope.edit = function(x){

@@ -13,15 +13,6 @@
 	margin-top: 10px;
 	font-family: 'Open Sans';
 }
-table {
-	border-collapse: collapse;
-}
-th, td {
-	padding: 5px;
-}
-.createForm input, .updateForm input {
-	padding: 5px;
-	margin-bottom: 5px; 
-	min-width: 200px;
-	border-radius: 5px;
+#editBtn {
+	margin-right: 10px;
 }
